@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
         }
         activeUsers = findViewById(R.id.tvActiveUsers)
 
-        //Dynamically change the color of the required fields when the user TYPING
+        //Dynamically change the color of the required fields when the user is TYPING
         userName.addTextChangedListener {
             val text = userName.text.toString()
             if(text.length in 5..15) textLength.setTextColor(Color.GREEN)
